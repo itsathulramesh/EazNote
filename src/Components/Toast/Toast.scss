@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@use "../../styles/variables" as var;
 
 .toast-container {
   position: fixed;
@@ -16,7 +16,7 @@
 }
 
 .toast {
-  background-color: $accent-color;
+  background-color: var.$accent-color;
   color: #121212;
   padding: 12px 20px;
   border-radius: 4px;

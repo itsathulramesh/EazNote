@@ -1,6 +1,6 @@
 import "./Header.scss";
 import { HeaderOptions } from "../../enums";
-// import Logo from "../../assets/logo.png";
+import Logo from "../../assets/Logo.png";
 import AddNotesIcon from "../../assets/addNotesIcon.svg";
 import AllNotesIcon from "../../assets/allNotesIcon.svg";
 import FavoriteNoteIcon from "../../assets/favoriteNoteIcon.svg";
@@ -27,11 +27,7 @@ const Header = ({
         {/* Title */}
         {!isMobile && (
           <div className="titleContainer">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1055/1055642.png"
-              alt="EazNote Logo"
-              className="headerLogo"
-            />
+            <img src={Logo} alt="EazNote Logo" className="headerLogo" />
             <div className="textContainer">
               <h1 className="headerTitle">EazNote</h1>
               <span className="headerSubtitle">Your Easy Note-Taking App</span>

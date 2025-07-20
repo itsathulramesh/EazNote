@@ -11,6 +11,7 @@ import useWindowSize from "../../utils/useWindowSize";
 import hamburgerIcon from "../../assets/hamburgerIcon.svg";
 import Overlay from "../../Components/Overlay/Overlay";
 import Toast from "../../Components/Toast/Toast";
+import Logo from "../../assets/Logo.png";
 
 const Home = () => {
   const [showAddNoteForm, setShowAddNoteForm] = useState(false);
@@ -109,7 +110,7 @@ const Home = () => {
               <h1 className="headerTitle">EazNote</h1>
             </div>
             <img
-              src="https://cdn-icons-png.flaticon.com/512/1055/1055642.png"
+              src={Logo}
               alt="EazNote Logo"
               className="headerLogo"
             />
