@@ -1,6 +1,10 @@
 # EazNote
 
 <p align="center">
+  <img src="public/EazNote.png" alt="EazNote" width="400"/>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
   <img src="https://img.shields.io/github/last-commit/sonalsai/EazNote" alt="Last Commit">
   <img src="https://img.shields.io/github/repo-size/sonalsai/EazNote" alt="Repo Size">
