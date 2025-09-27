@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
+        
       - name: Install dependencies
         run: npm install
 
@@ -29,7 +29,9 @@ jobs:
         run: |
           echo "${{ secrets.EC2_KEY }}" > key.pem
           chmod 600 key.pem
-
+      - name: Debug EC2 Host
+        run: echo "HOST=${{ secrets.EC2_HOST }}"
+        
       - name: Deploy build to EC2
         run: |
           scp -o StrictHostKeyChecking=no -i key.pem -r build/* ec2-user@${{ secrets.EC2_HOST }}:/var/www/html/
